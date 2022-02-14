@@ -101,7 +101,7 @@ class RANSAC():
     def fit_line(self, x, y, threshold, p=0.95, e=0.5, optimal_fit = False):
         N = int(np.ceil(np.log(1-p)/np.log(1 - np.power(1 - e, 2))))
         n = 2
-
+        N = np.max([N, 30])
         x = np.array(x)
 
         y = np.array(y)
