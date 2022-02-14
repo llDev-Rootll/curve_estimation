@@ -40,8 +40,8 @@ plt.xlabel('age')
 plt.ylabel('insurance_charges')
 
 # Rescale each eigen vector to fit the graph and plot them at the mean of the data
-plt.quiver(np.mean(x), np.mean(y), eig_vec1[0]*(np.max(x) - np.min(x))*np.max(eig_val) , eig_vec1[1]*(np.max(y) - np.min(y))*np.max(eig_val) , label = 'PC_1', color = 'r', units='xy', angles='xy', scale_units='xy', scale=0.2)
-plt.quiver(np.mean(x), np.mean(y), eig_vec2[0]*(np.max(x) - np.min(x))*np.min(eig_val) , eig_vec2[1]*(np.max(y) - np.min(y))*np.min(eig_val) , label = 'PC_2', units='xy', angles='xy', scale_units='xy', scale =0.2)
+plt.quiver(np.mean(x), np.mean(y), eig_vec1[0]*(np.max(x) - np.min(x))*np.max(eig_val) , eig_vec1[1]*(np.max(y) - np.min(y))*np.max(eig_val) , label = 'Principal Component 1', color = 'r', units='xy', angles='xy', scale_units='xy', scale=0.2)
+plt.quiver(np.mean(x), np.mean(y), eig_vec2[0]*(np.max(x) - np.min(x))*np.min(eig_val) , eig_vec2[1]*(np.max(y) - np.min(y))*np.min(eig_val) , label = 'Principal Component 2', units='xy', angles='xy', scale_units='xy', scale =0.2)
 
 plt.legend()
 # __________________________________________________________________
@@ -66,7 +66,7 @@ m, c = tls.fit_line(x_n, y_n)
 
 x2 = np.linspace(np.min(x_n), np.max(x_n), x_n.size) 
 x_ps = np.linspace(np.min(x), np.max(x), x.size) 
-print(m, c)
+
 y2 = m*x2 + c
 # Rescale data by performing inverse of min-max normalization
 y2 = y2*(np.max(y) - np.min(y)) + np.min(y)

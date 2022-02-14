@@ -17,9 +17,8 @@ y1=a*x**2+b*x+c
 plt.figure(1)
 # Plot data
 plt.scatter(x,y)
-plt.title("Parabola Fitting using Linear Least Sqaure")
-plt.xlabel('age')
-plt.ylabel('insurance_charges')
+plt.title("Parabola Fitting Without Noise")
+
 # Plot Curve
 plt.plot(x,y1, label="LS", color='r')
 plt.legend()
@@ -39,9 +38,8 @@ y1=a*x**2+b*x+c
 plt.figure(2)
 # Plot data
 plt.scatter(x,y)
-plt.title("Parabola Fitting using Linear Least Sqaure")
-plt.xlabel('age')
-plt.ylabel('insurance_charges')
+plt.title("Parabola Fitting With Noise")
+
 # Plot Curve
 plt.plot(x,y1, label="LS", color='r')
 plt.legend()
