@@ -1,7 +1,8 @@
 
 # ENPM673 HW 1
 The directory structure of the repo is:
-<img  alt="dir"  src="assets/dir.png"  width="75%" />
+
+<img  alt="dir"  src="assets/dir.png" />
 ## Steps to run each file
 Change current working directory to "code"
 To generate data points from each video run the following command
